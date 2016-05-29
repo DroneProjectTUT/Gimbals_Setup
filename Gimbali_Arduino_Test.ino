@@ -21,7 +21,7 @@
 #define    RegisterHighLowB    0x8f          // Register to get both High and Low bytes in 1 call.
 int reading = 0;
 
-//Serial output to the screen
+//Gimbal Controller is conntected to TX2, RX2, GND
 HardwareSerial &serial = Serial2;
 
 //Mandatory struct for gimbal system
@@ -36,7 +36,7 @@ void setup()
   serial.begin(SERIAL_SPEED);
   SBGC_Demo_setup(&serial);
 
-  //join i2c bus
+  //join i2c bus, SCL, SDA ports on the Arduino Controller
   Wire.begin(); 
 
   //Take a pause to let gimbal controller to initialize
