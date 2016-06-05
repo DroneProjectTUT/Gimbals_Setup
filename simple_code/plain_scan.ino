@@ -1,6 +1,7 @@
 // Simple scanning routine for a LIDAR-based System
 // LIDAR-based Environmental Perception System for Experimental Unmanned Aerial Vehicle
 // Evgenia Udod (Lauri Kurs) 2016
+//
 
 #include <inttypes.h>
 #include <SBGC.h>
